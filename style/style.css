@@ -1,0 +1,387 @@
+.logo {
+  grid-area: logo; }
+
+.social {
+  grid-area: social; }
+
+.menu {
+  grid-area: menu; }
+
+.page__container__carousel {
+  grid-area: carousel; }
+
+.page__container__title {
+  grid-area: title; }
+
+.page__container__articles__cyber {
+  grid-area: cyber; }
+
+.page__container__articles__junior {
+  grid-area: junior; }
+
+.page__container__articles__bitronics {
+  grid-area: bitronics; }
+
+.page__container__header {
+  grid-area: header; }
+
+.page__container__images {
+  grid-area: images; }
+
+.form__ask {
+  grid-area: form__ask; }
+
+@font-face {
+  font-family: "FuturaBookC";
+  src: url("../fonts/Futura/FuturaBookC.eot") format("eot"), url("../fonts/Futura/FuturaBookC.woff") format("woff"); }
+@font-face {
+  font-family: "FuturaBookC-Italic";
+  src: url("../fonts/Futura/FuturaBookC-Italic.eot") format("eot"), url("../fonts/Futura/FuturaBookC-Italic.woff") format("woff"); }
+@font-face {
+  font-family: "FuturaDemiC";
+  src: url("../fonts/Futura/FuturaDemiC.eot") format("eot"), url("../fonts/Futura/FuturaDemiC.woff") format("woff"); }
+@font-face {
+  font-family: "FuturaDemiC-Italic";
+  src: url("../fonts/Futura/FuturaDemiC-Italic.eot") format("eot"), url("../fonts/Futura/FuturaDemiC-Italic.woff") format("woff"); }
+@font-face {
+  font-family: "FuturaLightC";
+  src: url("../fonts/Futura/FuturaLightC.eot") format("eot"), url("../fonts/Futura/FuturaLightC.woff") format("woff"); }
+@font-face {
+  font-family: "FuturaLightC-Italic";
+  src: url("../fonts/Futura/FuturaLightC-Italic.eot") format("eot"), url("../fonts/Futura/FuturaLightC-Italic.woff") format("woff"); }
+@font-face {
+  font-family: "FuturaMediumC";
+  src: url("../fonts/Futura/FuturaMediumC.eot") format("eot"), url("../fonts/Futura/FuturaMediumC.woff") format("woff"); }
+@font-face {
+  font-family: "FuturaMediumC-Italic";
+  src: url("../fonts/Futura/FuturaMediumC-Italic.eot") format("eot"), url("../fonts/Futura/FuturaMediumC-Italic.woff") format("woff"); }
+@font-face {
+  font-family: "FuturaPT-Bold";
+  src: url("../fonts/FuturaPT-Bold/FuturaPT-Bold.eot") format("eot"), url("../fonts/FuturaPT-Bold/FuturaPT-Bold.woff") format("woff"), url("../fonts/FuturaPT-Bold/FuturaPT-Bold.ttf") format("woff"); }
+@font-face {
+  font-family: "FuturaPT-Book-Bold";
+  src: url("../fonts/FuturaPT-Book/FuturaPT-Book.eot") format("eot"), url("../fonts/FuturaPT-Book/FuturaPT-Book.woff") format("woff"), url("../fonts/FuturaPT-Book/FuturaPT-Book.ttf") format("woff"); }
+@font-face {
+  font-family: "FuturaPT-Demi";
+  src: url("../fonts/FuturaPT-Demi/FuturaPT-Demi.eot") format("eot"), url("../fonts/FuturaPT-Demi/FuturaPT-Demi.woff") format("woff"), url("../fonts/FuturaPT-Demi/FuturaPT-Demi.ttf") format("woff"); }
+@font-face {
+  font-family: "FuturaPT-ExtraBold";
+  src: url("../fonts/FuturaPT-ExtraBold/FuturaPT-ExtraBold.eot") format("eot"), url("../fonts/FuturaPT-ExtraBold/FuturaPT-ExtraBold.woff") format("woff"), url("../fonts/FuturaPT-ExtraBold/FuturaPT-ExtraBold.ttf") format("woff"); }
+@font-face {
+  font-family: "FuturaPT-Heavy";
+  src: url("../fonts/FuturaPT-Heavy/FuturaPT-Heavy.eot") format("eot"), url("../fonts/FuturaPT-Heavy/FuturaPT-Heavy.woff") format("woff"), url("../fonts/FuturaPT-Heavy/FuturaPT-Heavy.ttf") format("woff"); }
+@font-face {
+  font-family: "FuturaPT-Light";
+  src: url("../fonts/FuturaPT-Light/FuturaPT-Light.eot") format("eot"), url("../fonts/FuturaPT-Light/FuturaPT-Light.woff") format("woff"), url("../fonts/FuturaPT-Light/FuturaPT-Light.ttf") format("woff"); }
+@font-face {
+  font-family: "FuturaPTCond-Medium";
+  src: url("../fonts/FuturaPT-Medium/FuturaPTCond-Medium.eot") format("eot"), url("../fonts/FuturaPT-Medium/FuturaPTCond-Medium.woff") format("woff"), url("../fonts/FuturaPT-Medium/FuturaPTCond-Medium.ttf") format("woff"); }
+@font-face {
+  font-family: "FuturaPT-Medium";
+  src: url("../fonts/FuturaPT-Medium/FuturaPT-Medium.eot") format("eot"), url("../fonts/FuturaPT-Medium/FuturaPT-Medium.woff") format("woff"), url("../fonts/FuturaPT-Medium/FuturaPT-Medium.ttf") format("woff"); }
+@font-face {
+  font-family: "FuturaBookC";
+  src: url("../fonts/FuturaBookC.ttf") format("ttf"); }
+@font-face {
+  font-family: "FuturaBookC-Italic";
+  src: url("../fonts/FuturaBookC-Italic.ttf") format("ttf"); }
+@font-face {
+  font-family: "FuturaDemiC";
+  src: url("../fonts/FuturaDemiC.ttf") format("ttf"); }
+@font-face {
+  font-family: "FuturaDemiC-Italic";
+  src: url("../fonts/FuturaDemiC-Italic.ttf") format("ttf"); }
+@font-face {
+  font-family: "FuturaLightC";
+  src: url("../fonts/FuturaLightC.ttf") format("ttf"); }
+@font-face {
+  font-family: "FuturaLightC-Italic";
+  src: url("../fonts/FuturaLightC-Italic.ttf") format("ttf"); }
+@font-face {
+  font-family: "FuturaMediumC";
+  src: url("../fonts/FuturaMediumC.ttf") format("ttf"); }
+@font-face {
+  font-family: "FuturaMediumC-Italic";
+  src: url("../fonts/FuturaMediumC-Italic.ttf") format("ttf"); }
+@font-face {
+  font-family: "FuturaPT-Bold";
+  src: url("../fonts/FuturaPT-Bold.ttf") format("ttf"); }
+@font-face {
+  font-family: "FuturaPT-Book";
+  src: url("../fonts/FuturaPT-Book.ttf") format("ttf"); }
+@font-face {
+  font-family: "FuturaPTCond-Medium";
+  src: url("../fonts/FuturaPTCond-Medium.ttf") format("ttf"); }
+@font-face {
+  font-family: "FuturaPT-Demi";
+  src: url("../fonts/FuturaPT-Demi.ttf") format("ttf"); }
+@font-face {
+  font-family: "FuturaPT-ExtraBold";
+  src: url("../fonts/FuturaPT-ExtraBold.ttf") format("ttf"); }
+@font-face {
+  font-family: "FuturaPT-Heavy";
+  src: url("../fonts/FuturaPT-Heavy.ttf") format("ttf"); }
+@font-face {
+  font-family: "FuturaPT-Light";
+  src: url("../fonts/FuturaPT-Light.ttf") format("ttf"); }
+@font-face {
+  font-family: "FuturaPT-Medium";
+  src: url("../fonts/FuturaPT-Medium.ttf") format("ttf"); }
+.page {
+  width: 100%; }
+
+.page:nth-child(1) .social a:nth-child(1) img {
+  border-radius: 50%; }
+.page:nth-child(1) .social a:nth-child(2) img {
+  border-radius: 50%; }
+.page:nth-child(1) .social a:nth-child(3) img {
+  border-radius: 50%; }
+
+.page:nth-child(2) .page__container {
+  color: white; }
+  .page:nth-child(2) .page__container .page__container__carousel:nth-child(1) .laboratory {
+    background: url("../images/bcg1.jpg") center;
+    background-size: cover; }
+    .page:nth-child(2) .page__container .page__container__carousel:nth-child(1) .laboratory h2 {
+      text-transform: uppercase;
+      font-family: FuturaPT-Bold; }
+    .page:nth-child(2) .page__container .page__container__carousel:nth-child(1) .laboratory p {
+      font-family: FuturaPT-Medium; }
+  .page:nth-child(2) .page__container .page__container__carousel:nth-child(2) .materials {
+    background: url("../images/bcg1.jpg") center;
+    background-size: cover; }
+    .page:nth-child(2) .page__container .page__container__carousel:nth-child(2) .materials h3 {
+      text-transform: uppercase;
+      font-family: FuturaPT-Bold; }
+    .page:nth-child(2) .page__container .page__container__carousel:nth-child(2) .materials p {
+      font-family: FuturaPT-Medium; }
+  .page:nth-child(2) .page__container .page__container__carousel:nth-child(3) .olympiad {
+    background: url("../images/bcg1.jpg") center;
+    background-size: cover; }
+    .page:nth-child(2) .page__container .page__container__carousel:nth-child(3) .olympiad h3 {
+      text-transform: uppercase;
+      font-family: FuturaPT-Bold; }
+    .page:nth-child(2) .page__container .page__container__carousel:nth-child(3) .olympiad p {
+      font-family: FuturaPT-Medium; }
+
+.page:nth-child(3) {
+  color: white;
+  text-align: center;
+  text-transform: uppercase; }
+  .page:nth-child(3) .page__container__carousel:nth-child(1) {
+    background: url("../images/news1.jpg") center;
+    background-size: cover; }
+  .page:nth-child(3) .page__container__carousel:nth-child(2) {
+    background: url("../images/news2.jpg") center;
+    background-size: cover; }
+  .page:nth-child(3) .page__container__carousel:nth-child(3) {
+    background: url("../images/news3.jpg") center;
+    background-size: cover; }
+  .page:nth-child(3) .page__container__carousel:nth-child(4) {
+    background: url("../images/news4.jpeg") center;
+    background-size: cover; }
+  .page:nth-child(3) .page__container__carousel:nth-child(5) {
+    background: url("../images/news5.jpg") center;
+    background-size: cover; }
+
+.page:nth-child(4) {
+  color: white;
+  background-color: #2A3174; }
+  .page:nth-child(4) h2 {
+    font-family: FuturaPT-Heavy; }
+  .page:nth-child(4) h3 {
+    font-family: FuturaPT-Heavy; }
+  .page:nth-child(4) dl {
+    font-family: FuturaPT-Light; }
+  .page:nth-child(4) .page__container .page__container__articles__cyber {
+    background-color: #7986CB;
+    padding: 20px;
+    border-radius: 10px; }
+  .page:nth-child(4) .page__container .page__container__articles__junior {
+    background-color: #FFB74D;
+    padding: 20px;
+    border-radius: 10px; }
+  .page:nth-child(4) .page__container .page__container__articles__bitronics {
+    background-color: #81C784;
+    padding: 20px;
+    border-radius: 10px; }
+
+.page:nth-child(6) .page__container span {
+  font-family: FuturaPT-Heavy;
+  color: #2A3174; }
+
+.page:nth-child(7) {
+  background: url("../images/bcg1.jpg") center;
+  background-size: cover; }
+  .page:nth-child(7) .page__container form .icon {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    background-color: #FF5722;
+    color: white;
+    text-align: center;
+    font-family: FuturaPT-Bold;
+    font-size: 23px;
+    margin-left: 15%; }
+  .page:nth-child(7) .page__container form span {
+    display: inline-block;
+    font-family: FuturaPT-Bold;
+    font-size: 16px;
+    color: white;
+    margin-top: 16px; }
+  .page:nth-child(7) .page__container form input {
+    display: block;
+    width: 70%;
+    margin: 10px auto; }
+  .page:nth-child(7) .page__container form textarea {
+    font-family: FuturaPT-Light;
+    width: 70%;
+    height: 100px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+    margin: 20px 15%; }
+  .page:nth-child(7) .page__container form input[type=email] {
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-family: FuturaPT-Medium; }
+  .page:nth-child(7) .page__container form input::placeholder {
+    color: white;
+    opacity: 1; }
+  .page:nth-child(7) .page__container form button {
+    display: block;
+    width: 71%;
+    margin: 10px auto;
+    background-color: #FF5722;
+    border: 1px solid white;
+    border-radius: 5px;
+    height: 30px;
+    color: white;
+    font-family: FuturaPT-Bold; }
+  .page:nth-child(7) .page__container form a {
+    display: block;
+    width: 70%;
+    margin: 10px auto;
+    text-decoration: none;
+    color: white; }
+
+.page:nth-child(8) {
+  background-color: #2A3174;
+  color: white; }
+  .page:nth-child(8) h6 {
+    display: inline-block;
+    width: 100%;
+    height: 100%; }
+
+@media only screen and (max-width: 540px) {
+  .page:nth-child(1) {
+    display: grid;
+    grid-gap: 5px;
+    min-width: 350px;
+    grid-template-columns: 2fr minmax(68px, 1fr);
+    grid-auto-rows: minmax(34px, auto);
+    grid-template-areas: "logo menu" "social menu"; }
+    .page:nth-child(1) .logo img {
+      max-height: 34px; }
+    .page:nth-child(1) .social a {
+      display: inline-block; }
+      .page:nth-child(1) .social a img {
+        height: 34px; }
+    .page:nth-child(1) .menu {
+      text-align: right;
+      padding: 0;
+      margin: auto 0; }
+      .page:nth-child(1) .menu img {
+        height: 68px;
+        margin: 0;
+        padding: 0; }
+
+  .page:nth-child(2) {
+    display: grid;
+    min-width: 350px;
+    grid-template-columns: 1fr; }
+    .page:nth-child(2) .page__container .page__container__carousel .laboratory {
+      min-height: 350px;
+      padding: 30px;
+      font-size: 6vw; }
+    .page:nth-child(2) .page__container .page__container__carousel .materials {
+      min-height: 350px;
+      padding: 30px;
+      font-size: 6vw; }
+    .page:nth-child(2) .page__container .page__container__carousel .olympiad {
+      min-height: 350px;
+      padding: 30px;
+      font-size: 6vw; }
+
+  .page:nth-child(3) {
+    display: grid;
+    min-width: 350px;
+    grid-template-columns: 1fr; }
+    .page:nth-child(3) .page__container .page__container__carousel {
+      min-height: 350px;
+      padding: 30px;
+      font-size: 6.5vw;
+      font-family: FuturaPT-Bold; }
+
+  .page:nth-child(4) {
+    display: grid;
+    min-width: 350px;
+    grid-template-columns: 1fr; }
+    .page:nth-child(4) .page__container {
+      display: grid;
+      grid-gap: 5px;
+      grid-template-columns: 1fr;
+      grid-auto-rows: minmax(34px, auto);
+      grid-template-areas: "title" "cyber" "junior" "bitronics";
+      padding: 5px; }
+      .page:nth-child(4) .page__container .page__container__title {
+        text-align: center; }
+
+  .page:nth-child(5) {
+    display: grid;
+    min-width: 350px;
+    grid-template-columns: 1fr; }
+    .page:nth-child(5) .page__container img {
+      display: inline-block;
+      height: auto;
+      width: 100%; }
+
+  .page:nth-child(6) {
+    display: grid;
+    min-width: 350px;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(34px, auto);
+    grid-template-areas: "header" "images";
+    text-align: center; }
+    .page:nth-child(6) .page__container__header {
+      font-size: 10vw; }
+    .page:nth-child(6) .page__container__images {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px; }
+      .page:nth-child(6) .page__container__images img {
+        display: inline-block;
+        height: auto;
+        width: 100%; }
+
+  .page:nth-child(7) {
+    display: grid;
+    min-width: 350px;
+    grid-template-columns: 1fr; }
+
+  .footer {
+    min-width: 350px;
+    background-color: #2A3174;
+    color: white; }
+    .footer h6 {
+      width: 100%;
+      height: 100%;
+      text-align: center; } }
+
+/*# sourceMappingURL=style.css.map */

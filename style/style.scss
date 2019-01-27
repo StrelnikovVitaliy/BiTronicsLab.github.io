@@ -1,0 +1,360 @@
+@import "mixins";
+@import "gridareas";
+@import "allfonts";
+
+.page {
+  width: 100%;
+}
+
+.page:nth-child(1) {
+  .social {
+    a:nth-child(1) img {
+      border-radius: 50%;
+    }
+    a:nth-child(2) img {
+      border-radius: 50%;
+    }
+    a:nth-child(3) img {
+      border-radius: 50%;
+    }
+  }
+}
+
+.page:nth-child(2) {
+  .page__container {
+    color: white;
+    .page__container__carousel:nth-child(1) {
+      .laboratory {
+        background: url("../images/bcg1.jpg") center;
+        background-size: cover;
+        h2 {
+          text-transform: uppercase;
+          font-family: FuturaPT-Bold;
+        }
+        p {
+          font-family: FuturaPT-Medium;
+        }
+      }
+    }
+    .page__container__carousel:nth-child(2) {
+      .materials {
+        background: url("../images/bcg1.jpg") center;
+        background-size: cover;
+        h3 {
+          text-transform: uppercase;
+          font-family: FuturaPT-Bold;
+        }
+        p {
+          font-family: FuturaPT-Medium;
+        }
+      }
+    }
+    .page__container__carousel:nth-child(3) {
+      .olympiad {
+        background: url("../images/bcg1.jpg") center;
+        background-size: cover;
+        h3 {
+          text-transform: uppercase;
+          font-family: FuturaPT-Bold;
+        }
+        p {
+          font-family: FuturaPT-Medium;
+        }
+      }
+    }
+  }
+}
+
+.page:nth-child(3) {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  .page__container__carousel:nth-child(1) {
+    background: url("../images/news1.jpg") center;
+    background-size: cover;
+  }
+  .page__container__carousel:nth-child(2) {
+    background: url("../images/news2.jpg") center;
+    background-size: cover;
+  }
+  .page__container__carousel:nth-child(3) {
+    background: url("../images/news3.jpg") center;
+    background-size: cover;
+  }
+  .page__container__carousel:nth-child(4) {
+    background: url("../images/news4.jpeg") center;
+    background-size: cover;
+  }
+  .page__container__carousel:nth-child(5) {
+    background: url("../images/news5.jpg") center;
+    background-size: cover;
+  }
+
+}
+
+.page:nth-child(4) {
+  color: white;
+  background-color: #2A3174;
+  h2 {
+    font-family: FuturaPT-Heavy;
+  }
+  h3 {
+    font-family: FuturaPT-Heavy;
+  }
+  dl {
+    font-family: FuturaPT-Light;
+  }
+  .page__container {
+    .page__container__articles__cyber {
+      background-color: #7986CB;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .page__container__articles__junior {
+      background-color: #FFB74D;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .page__container__articles__bitronics {
+      background-color: #81C784;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+  }
+
+}
+
+.page:nth-child(6) {
+  .page__container {
+    span {
+      font-family: FuturaPT-Heavy;
+      color: #2A3174;
+    }
+  }
+}
+
+.page:nth-child(7) {
+  background: url("../images/bcg1.jpg") center;
+  background-size: cover;
+  .page__container {
+    form {
+      .icon {
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        border-radius: 10px;
+        background-color: #FF5722;
+        color: white;
+        text-align: center;
+        font-family: FuturaPT-Bold;
+        font-size: 23px;
+        margin-left: 15%;
+      }
+      span {
+        display: inline-block;
+        font-family: FuturaPT-Bold;
+        font-size: 16px;
+        color: white;
+        margin-top: 16px;
+      }
+
+      input {
+        display: block;
+        width: 70%;
+        margin: 10px auto;
+      }
+      textarea {
+        font-family: FuturaPT-Light;
+        width: 70%;
+        height: 100px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        resize: none;
+        margin: 20px 15%;
+      }
+      input[type=email] {
+        border: none;
+        border-bottom: 2px solid white;
+        background-color: transparent;
+        color: white;
+        font-family: FuturaPT-Medium;
+      }
+      input::placeholder {
+        color: white;
+        opacity: 1;
+
+      }
+      button {
+        display: block;
+        width: 71%;
+        margin: 10px auto;
+        background-color: #FF5722;
+        border: 1px solid white;
+        border-radius: 5px;
+        height: 30px;
+        color: white;
+        font-family: FuturaPT-Bold;
+      }
+      a {
+        display: block;
+        width: 70%;
+        margin: 10px auto;
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+}
+.page:nth-child(8) {
+  background-color: #2A3174;
+  color: white;
+  h6{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+//media screens
+@include mobile-screens {
+  //nav line
+  .page:nth-child(1) {
+    display: grid;
+    grid-gap: 5px;
+    min-width: 350px;
+    grid-template-columns: 2fr minmax(68px, 1fr);
+    grid-auto-rows: minmax(34px, auto);
+    grid-template-areas: "logo menu" "social menu";
+    .logo {
+      img {
+        max-height: 34px;
+      }
+    }
+    .social {
+      a {
+        display: inline-block;
+        img {
+          height: 34px;
+        }
+      }
+    }
+    .menu {
+      text-align: right;
+      padding: 0;
+      margin: auto 0;
+      img {
+        height: 68px;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+  .page:nth-child(2) {
+    display: grid;
+    min-width: 350px;
+    grid-template-columns: 1fr;
+
+    .page__container {
+      .page__container__carousel {
+        .laboratory {
+          min-height: 350px;
+          padding: 30px;
+          font-size: 6vw;
+        }
+        .materials {
+          min-height: 350px;
+          padding: 30px;
+          font-size: 6vw;
+        }
+        .olympiad {
+          min-height: 350px;
+          padding: 30px;
+          font-size: 6vw;
+        }
+      }
+    }
+  }
+  .page:nth-child(3) {
+    display: grid;
+    min-width: 350px;
+    grid-template-columns: 1fr;
+
+    .page__container {
+      .page__container__carousel {
+        min-height: 350px;
+        padding: 30px;
+        font-size: 6.5vw;
+        font-family: FuturaPT-Bold;
+      }
+    }
+  }
+  .page:nth-child(4) {
+    display: grid;
+    min-width: 350px;
+    grid-template-columns: 1fr;
+    .page__container {
+      display: grid;
+      grid-gap: 5px;
+      grid-template-columns: 1fr;
+      grid-auto-rows: minmax(34px, auto);
+      grid-template-areas: "title" "cyber" "junior" "bitronics";
+      padding: 5px;
+      .page__container__title {
+        text-align: center;
+      }
+    }
+  }
+  .page:nth-child(5) {
+    display: grid;
+    min-width: 350px;
+    grid-template-columns: 1fr;
+    .page__container {
+      img {
+        display: inline-block;
+        height: auto;
+        width: 100%;
+      }
+    }
+  }
+  .page:nth-child(6) {
+    display: grid;
+    min-width: 350px;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(34px, auto);
+    grid-template-areas: "header" "images";
+    text-align: center;
+
+    .page__container__header {
+      font-size: 10vw;
+    }
+    .page__container__images {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
+      img {
+        display: inline-block;
+        height: auto;
+        width: 100%;
+      }
+    }
+  }
+  .page:nth-child(7) {
+    display: grid;
+    min-width: 350px;
+    grid-template-columns: 1fr;
+  }
+  .footer {
+    min-width: 350px;
+    background-color: #2A3174;
+    color: white;
+    h6{
+      width: 100%;
+      height: 100%;
+      text-align: center;
+    }
+  }
+}
