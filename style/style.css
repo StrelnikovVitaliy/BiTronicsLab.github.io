@@ -140,7 +140,7 @@
 .page:nth-child(2) .page__container {
   color: white; }
   .page:nth-child(2) .page__container .page__container__carousel:nth-child(1) .laboratory {
-    background: url("../images/bcg1.jpg") center;
+    background: url("../images/bcg1.jpg") right;
     background-size: cover; }
     .page:nth-child(2) .page__container .page__container__carousel:nth-child(1) .laboratory h2 {
       text-transform: uppercase;
@@ -148,7 +148,7 @@
     .page:nth-child(2) .page__container .page__container__carousel:nth-child(1) .laboratory p {
       font-family: FuturaPT-Medium; }
   .page:nth-child(2) .page__container .page__container__carousel:nth-child(2) .materials {
-    background: url("../images/bcg1.jpg") center;
+    background: url("../images/bcg1.jpg") right;
     background-size: cover; }
     .page:nth-child(2) .page__container .page__container__carousel:nth-child(2) .materials h3 {
       text-transform: uppercase;
@@ -156,7 +156,7 @@
     .page:nth-child(2) .page__container .page__container__carousel:nth-child(2) .materials p {
       font-family: FuturaPT-Medium; }
   .page:nth-child(2) .page__container .page__container__carousel:nth-child(3) .olympiad {
-    background: url("../images/bcg1.jpg") center;
+    background: url("../images/bcg1.jpg") right;
     background-size: cover; }
     .page:nth-child(2) .page__container .page__container__carousel:nth-child(3) .olympiad h3 {
       text-transform: uppercase;
@@ -168,21 +168,6 @@
   color: white;
   text-align: center;
   text-transform: uppercase; }
-  .page:nth-child(3) .page__container__carousel:nth-child(1) {
-    background: url("../images/news1.jpg") center;
-    background-size: cover; }
-  .page:nth-child(3) .page__container__carousel:nth-child(2) {
-    background: url("../images/news2.jpg") center;
-    background-size: cover; }
-  .page:nth-child(3) .page__container__carousel:nth-child(3) {
-    background: url("../images/news3.jpg") center;
-    background-size: cover; }
-  .page:nth-child(3) .page__container__carousel:nth-child(4) {
-    background: url("../images/news4.jpeg") center;
-    background-size: cover; }
-  .page:nth-child(3) .page__container__carousel:nth-child(5) {
-    background: url("../images/news5.jpg") center;
-    background-size: cover; }
 
 .page:nth-child(4) {
   color: white;
@@ -321,15 +306,17 @@
     width: 100%;
     grid-template-columns: 1fr; }
     .page:nth-child(3) .page__container .page__container__carousel {
-      width: 100%;
-      height: auto;
-      margin-top: 10px;
-      font-size: 6.5vw;
-      font-family: FuturaPT-Bold; }
+      position: relative; }
+      .page:nth-child(3) .page__container .page__container__carousel img {
+        width: 100%;
+        height: auto;
+        margin-top: 10px; }
       .page:nth-child(3) .page__container .page__container__carousel span {
-        display: inline-block;
-        margin-top: 20%;
-        margin-bottom: 20%; }
+        position: absolute;
+        top: 10%;
+        left: 2%;
+        font-size: 6.5vw;
+        font-family: FuturaPT-Bold; }
 
   .page:nth-child(4) {
     display: grid;
@@ -395,8 +382,161 @@
     color: white; }
     .page:nth-child(8) h6 {
       display: block;
-      width: 100%;
-      height: 100%;
+      margin-left: 15%; } }
+@media only screen and (min-width: 541px) and (max-width: 960px) {
+  .page:nth-child(1) {
+    display: grid;
+    grid-gap: 5px;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(34px, auto);
+    grid-template-areas: "logo social menu"; }
+    .page:nth-child(1) .logo img {
+      max-height: 30px; }
+    .page:nth-child(1) .social {
+      margin: 0 auto; }
+      .page:nth-child(1) .social a {
+        display: inline-block; }
+        .page:nth-child(1) .social a img {
+          height: 30px; }
+    .page:nth-child(1) .menu {
+      display: block;
+      text-align: right;
+      padding: 0;
+      margin: auto 0; }
+      .page:nth-child(1) .menu img {
+        height: 60px;
+        margin: 0;
+        padding: 0 10px 0 0; }
+
+  .page:nth-child(2) {
+    width: 100%; }
+    .page:nth-child(2) .page__container .page__container__carousel:nth-child(1) .laboratory {
+      height: 300px;
+      width: auto;
+      padding: 4% 0 0 4%; }
+      .page:nth-child(2) .page__container .page__container__carousel:nth-child(1) .laboratory h2 {
+        word-wrap: break-word;
+        font-size: 6.3vw;
+        width: 60%; }
+      .page:nth-child(2) .page__container .page__container__carousel:nth-child(1) .laboratory p {
+        margin-top: 0;
+        font-size: 3.5vw; }
+    .page:nth-child(2) .page__container .page__container__carousel:nth-child(2) .materials {
+      height: 300px;
+      width: auto;
+      padding-left: 4%; }
+      .page:nth-child(2) .page__container .page__container__carousel:nth-child(2) .materials h3 {
+        word-wrap: break-word;
+        font-size: 5.3vw;
+        width: 60%;
+        margin-top: 0;
+        padding-top: 1%; }
+      .page:nth-child(2) .page__container .page__container__carousel:nth-child(2) .materials p {
+        font-size: 3.5vw; }
+    .page:nth-child(2) .page__container .page__container__carousel:nth-child(3) .olympiad {
+      height: 300px;
+      width: auto;
+      padding: 4% 0 0 4%; }
+      .page:nth-child(2) .page__container .page__container__carousel:nth-child(3) .olympiad h3 {
+        word-wrap: break-word;
+        font-size: 5.3vw;
+        width: 60%;
+        margin-top: 0;
+        padding-top: 1%; }
+      .page:nth-child(2) .page__container .page__container__carousel:nth-child(3) .olympiad p {
+        font-size: 3.5vw; }
+
+  .page:nth-child(3) {
+    width: 100%; }
+    .page:nth-child(3) .page__container {
+      display: flex;
+      flex-direction: row; }
+      .page:nth-child(3) .page__container .page__container__carousel {
+        display: inline-block;
+        position: relative; }
+        .page:nth-child(3) .page__container .page__container__carousel img {
+          display: block;
+          width: auto;
+          height: 200px;
+          margin-top: 10px; }
+        .page:nth-child(3) .page__container .page__container__carousel span {
+          position: absolute;
+          top: 70px;
+          left: 30px;
+          font-size: 20px;
+          word-wrap: break-word;
+          font-family: FuturaPT-Bold; }
+
+  .page:nth-child(4) {
+    background-image: url("../images/bcglabs.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%; }
+    .page:nth-child(4) .page__container {
+      display: grid;
+      grid-gap: 5px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(7, minmax(50px, auto));
+      grid-auto-rows: minmax(34px, auto);
+      grid-template-areas: "title title" ". ." ". cyber" "junior ." ". bitronics" ". ." ". .";
+      padding: 5px; }
+      .page:nth-child(4) .page__container .page__container__title {
+        text-align: center; }
+
+  .page:nth-child(5) {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr; }
+    .page:nth-child(5) .page__container img {
+      display: inline-block;
+      height: auto;
+      width: 100%; }
+
+  .page:nth-child(6) {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(34px, auto);
+    grid-template-areas: "header" "images";
+    text-align: center; }
+    .page:nth-child(6) .page__container__header {
+      font-size: 6vw; }
+    .page:nth-child(6) .page__container__images {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-gap: 30px; }
+      .page:nth-child(6) .page__container__images img {
+        display: inline-block;
+        height: auto;
+        width: 100%;
+        margin: auto auto; }
+
+  .page:nth-child(7) {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr; }
+    .page:nth-child(7) .page__container form img {
+      max-height: 8vw;
+      margin-left: 15%;
+      margin-top: 5%; }
+    .page:nth-child(7) .page__container form p {
+      width: 60%;
+      word-wrap: break-word;
+      font-size: 4vw;
+      margin-top: 5%; }
+    .page:nth-child(7) .page__container form a {
+      font-size: 13px; }
+    .page:nth-child(7) .page__container form input[type=email] {
+      font-size: 15px; }
+
+  .page:nth-child(8) {
+    display: grid;
+    width: 100%;
+    background-color: #2A3174;
+    color: white; }
+    .page:nth-child(8) h6 {
+      display: block;
       margin-left: 15%; } }
 
 /*# sourceMappingURL=style.css.map */
