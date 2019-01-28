@@ -462,6 +462,7 @@
     .page__container {
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
       .page__container__carousel {
         display: inline-block;
         position: relative;

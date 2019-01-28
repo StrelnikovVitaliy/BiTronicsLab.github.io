@@ -451,7 +451,8 @@
     width: 100%; }
     .page:nth-child(3) .page__container {
       display: flex;
-      flex-direction: row; }
+      flex-direction: row;
+      flex-wrap: wrap; }
       .page:nth-child(3) .page__container .page__container__carousel {
         display: inline-block;
         position: relative; }
