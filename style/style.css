@@ -385,6 +385,8 @@
       word-wrap: break-word;
       font-size: 4vw;
       margin-top: 5%; }
+    .page:nth-child(7) .page__container form a {
+      font-size: 10px; }
 
   .page:nth-child(8) {
     display: grid;
