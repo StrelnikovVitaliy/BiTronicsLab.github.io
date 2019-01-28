@@ -213,63 +213,59 @@
 .page:nth-child(7) {
   background: url("../images/bcg1.jpg") center;
   background-size: cover; }
-  .page:nth-child(7) .page__container form .icon {
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-    border-radius: 10px;
-    background-color: #FF5722;
-    color: white;
-    text-align: center;
-    font-family: FuturaPT-Bold;
-    font-size: 23px;
-    margin-left: 15%; }
-  .page:nth-child(7) .page__container form span {
-    display: inline-block;
-    font-family: FuturaPT-Bold;
-    font-size: 16px;
-    color: white;
-    margin-top: 16px; }
-  .page:nth-child(7) .page__container form input {
+  .page:nth-child(7) .page__container {
     display: block;
-    width: 70%;
-    margin: 10px auto; }
-  .page:nth-child(7) .page__container form textarea {
-    font-family: FuturaPT-Light;
-    width: 70%;
-    height: 100px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: #f8f8f8;
-    resize: none;
-    margin: 20px 15%; }
-  .page:nth-child(7) .page__container form input[type=email] {
-    border: none;
-    border-bottom: 2px solid white;
-    background-color: transparent;
-    color: white;
-    font-family: FuturaPT-Medium; }
-  .page:nth-child(7) .page__container form input::placeholder {
-    color: white;
-    opacity: 1; }
-  .page:nth-child(7) .page__container form button {
-    display: block;
-    width: 71%;
-    margin: 10px auto;
-    background-color: #FF5722;
-    border: 1px solid white;
-    border-radius: 5px;
-    height: 30px;
-    color: white;
-    font-family: FuturaPT-Bold; }
-  .page:nth-child(7) .page__container form a {
-    display: block;
-    width: 70%;
-    margin: 10px auto;
-    text-decoration: none;
-    color: white; }
+    position: relative; }
+    .page:nth-child(7) .page__container form img {
+      display: inline-block;
+      margin: 0;
+      padding: 0; }
+    .page:nth-child(7) .page__container form p {
+      display: inline-block;
+      font-family: FuturaPT-Bold;
+      color: white;
+      margin: 0;
+      padding: 0; }
+    .page:nth-child(7) .page__container form input {
+      display: block;
+      width: 70%;
+      margin: 10px auto; }
+    .page:nth-child(7) .page__container form textarea {
+      font-family: FuturaPT-Light;
+      width: 70%;
+      height: 100px;
+      padding: 12px 20px;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      background-color: #f8f8f8;
+      resize: none;
+      margin: 20px 15%; }
+    .page:nth-child(7) .page__container form input[type=email] {
+      border: none;
+      border-bottom: 2px solid white;
+      background-color: transparent;
+      color: white;
+      font-family: FuturaPT-Medium; }
+    .page:nth-child(7) .page__container form input::placeholder {
+      color: white;
+      opacity: 1; }
+    .page:nth-child(7) .page__container form button {
+      display: block;
+      width: 71%;
+      margin: 10px auto;
+      background-color: #FF5722;
+      border: 1px solid white;
+      border-radius: 5px;
+      height: 30px;
+      color: white;
+      font-family: FuturaPT-Bold; }
+    .page:nth-child(7) .page__container form a {
+      display: block;
+      width: 70%;
+      margin: 10px auto;
+      text-decoration: none;
+      color: white; }
 
 .page:nth-child(8) {
   background-color: #2A3174;
@@ -283,55 +279,61 @@
   .page:nth-child(1) {
     display: grid;
     grid-gap: 5px;
-    min-width: 350px;
-    grid-template-columns: 2fr minmax(68px, 1fr);
+    width: 100%;
+    grid-template-columns: 2fr minmax(60px, 1fr);
     grid-auto-rows: minmax(34px, auto);
     grid-template-areas: "logo menu" "social menu"; }
     .page:nth-child(1) .logo img {
-      max-height: 34px; }
+      max-height: 30px; }
     .page:nth-child(1) .social a {
       display: inline-block; }
       .page:nth-child(1) .social a img {
-        height: 34px; }
+        height: 30px; }
     .page:nth-child(1) .menu {
+      display: block;
       text-align: right;
       padding: 0;
       margin: auto 0; }
       .page:nth-child(1) .menu img {
-        height: 68px;
+        height: 60px;
         margin: 0;
-        padding: 0; }
+        padding: 0 10px 0 0; }
 
   .page:nth-child(2) {
     display: grid;
-    min-width: 350px;
+    width: 100%;
     grid-template-columns: 1fr; }
     .page:nth-child(2) .page__container .page__container__carousel .laboratory {
-      min-height: 350px;
+      min-height: 320px;
       padding: 30px;
       font-size: 6vw; }
     .page:nth-child(2) .page__container .page__container__carousel .materials {
-      min-height: 350px;
+      min-height: 320px;
       padding: 30px;
       font-size: 6vw; }
     .page:nth-child(2) .page__container .page__container__carousel .olympiad {
-      min-height: 350px;
+      min-height: 320px;
       padding: 30px;
       font-size: 6vw; }
 
   .page:nth-child(3) {
     display: grid;
-    min-width: 350px;
+    width: 100%;
     grid-template-columns: 1fr; }
     .page:nth-child(3) .page__container .page__container__carousel {
-      min-height: 350px;
-      padding: 30px;
+      width: 100%;
+      height: auto;
+      margin-top: 10px;
       font-size: 6.5vw;
       font-family: FuturaPT-Bold; }
+      .page:nth-child(3) .page__container .page__container__carousel span {
+        display: inline-block;
+        margin-top: 20%;
+        margin-bottom: 20%; }
 
   .page:nth-child(4) {
     display: grid;
-    min-width: 350px;
+    width: 100%;
     grid-template-columns: 1fr; }
     .page:nth-child(4) .page__container {
       display: grid;
@@ -345,7 +347,7 @@
 
   .page:nth-child(5) {
     display: grid;
-    min-width: 350px;
+    width: 100%;
     grid-template-columns: 1fr; }
     .page:nth-child(5) .page__container img {
       display: inline-block;
@@ -354,7 +356,7 @@
 
   .page:nth-child(6) {
     display: grid;
-    min-width: 350px;
+    width: 100%;
     grid-template-columns: 1fr;
     grid-auto-rows: minmax(34px, auto);
     grid-template-areas: "header" "images";
@@ -363,8 +365,8 @@
       font-size: 10vw; }
     .page:nth-child(6) .page__container__images {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 10px; }
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 15px; }
       .page:nth-child(6) .page__container__images img {
         display: inline-block;
         height: auto;
@@ -372,16 +374,27 @@
 
   .page:nth-child(7) {
     display: grid;
-    min-width: 350px;
+    width: 100%;
     grid-template-columns: 1fr; }
+    .page:nth-child(7) .page__container form img {
+      height: 40px;
+      margin-left: 15%;
+      margin-top: 5%; }
+    .page:nth-child(7) .page__container form p {
+      width: 60%;
+      word-wrap: break-word;
+      font-size: 4vw;
+      margin-top: 5%; }
 
-  .footer {
-    min-width: 350px;
+  .page:nth-child(8) {
+    display: grid;
+    width: 100%;
     background-color: #2A3174;
     color: white; }
-    .footer h6 {
+    .page:nth-child(8) h6 {
+      display: block;
       width: 100%;
       height: 100%;
-      text-align: center; } }
+      margin-left: 15%; } }
 
 /*# sourceMappingURL=style.css.map */
