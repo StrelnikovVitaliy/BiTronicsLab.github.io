@@ -182,15 +182,15 @@
   .page:nth-child(4) dl {
     font-family: FuturaPT-Light; }
   .page:nth-child(4) .page__container .page__container__articles__cyber {
-    background-color: #7986CB;
+    background-color: #7986cb;
     padding: 20px;
     border-radius: 10px; }
   .page:nth-child(4) .page__container .page__container__articles__junior {
-    background-color: #FFB74D;
+    background-color: #ffb74d;
     padding: 20px;
     border-radius: 10px; }
   .page:nth-child(4) .page__container .page__container__articles__bitronics {
-    background-color: #81C784;
+    background-color: #81c784;
     padding: 20px;
     border-radius: 10px; }
 
@@ -475,7 +475,7 @@
   .page:nth-child(4) {
     background-image: url("../images/bcglabs.png");
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     width: 100%; }
     .page:nth-child(4) .page__container {
       display: grid;
@@ -487,6 +487,18 @@
       padding: 5px; }
       .page:nth-child(4) .page__container .page__container__title {
         text-align: center; }
+      .page:nth-child(4) .page__container .page__container__articles__cyber {
+        background-color: rgba(121, 134, 203, 0.7);
+        padding: 20px;
+        border-radius: 10px; }
+      .page:nth-child(4) .page__container .page__container__articles__junior {
+        background-color: rgba(255, 183, 77, 0.7);
+        padding: 20px;
+        border-radius: 10px; }
+      .page:nth-child(4) .page__container .page__container__articles__bitronics {
+        background-color: rgba(129, 199, 132, 0.7);
+        padding: 20px;
+        border-radius: 10px; }
 
   .page:nth-child(5) {
     display: grid;
