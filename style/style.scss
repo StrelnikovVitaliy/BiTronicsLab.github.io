@@ -270,7 +270,7 @@
         }
 
         span {
-          position: absolute ;
+          position: absolute;
           top: 10%;
           left: 2%;
           font-size: 6.5vw;
@@ -474,7 +474,7 @@
 
         }
         span {
-          position: absolute ;
+          position: absolute;
           top: 70px;
           left: 30px;
           font-size: 20px;
@@ -495,13 +495,7 @@
       grid-template-columns: 1fr 1fr;
       grid-template-rows: repeat(7, minmax(50px, auto));
       grid-auto-rows: minmax(34px, auto);
-      grid-template-areas: "title title"
-      ". ."
-      ". cyber"
-      "junior ."
-      ". bitronics"
-      ". ."
-      ". .";
+      grid-template-areas: "title title" ". ." ". cyber" "junior ." ". bitronics" ". ." ". .";
       padding: 5px;
       .page__container__title {
         text-align: center;
@@ -565,6 +559,269 @@
         }
         input[type=email] {
           font-size: 15px;
+        }
+      }
+    }
+  }
+  .page:nth-child(8) {
+    display: grid;
+    width: 100%;
+    background-color: #2A3174;
+    color: white;
+    h6 {
+      display: block;
+      margin-left: 15%
+    }
+  }
+}
+
+@include large-screens {
+  .page:nth-child(1) {
+    display: grid;
+    grid-gap: 5px;
+    width: 100%;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(34px, auto);
+    grid-template-areas: ". logo social . menu .";
+    .logo {
+      margin: auto auto;
+      img {
+        max-height: 50px;
+      }
+    }
+    .social {
+      margin-top: auto;
+      margin-bottom: auto;
+      text-align: right;
+
+      a {
+        display: inline-block;
+        img {
+          max-height: 40px;
+        }
+      }
+    }
+    .menu {
+      text-align: right;
+      margin: auto 0;
+      img {
+        height: 72px;
+      }
+    }
+  }
+  .page:nth-child(2) {
+    width: 100%;
+    .page__container {
+      .page__container__carousel:nth-child(1) {
+        .laboratory {
+          height: 950px;
+          width: auto;
+          padding: 4% 0 0 13vw;
+          h2 {
+            word-wrap: break-word;
+            font-size: 6.3vw;
+            width: 60%;
+          }
+          p {
+            margin-top: 0;
+            font-size: 3.5vw;
+          }
+        }
+
+      }
+      .page__container__carousel:nth-child(2) {
+        .materials {
+          height: 950px;
+          width: auto;
+          padding: 4% 0 0 13vw;
+          h3 {
+            word-wrap: break-word;
+            font-size: 5.3vw;
+            width: 60%;
+            margin-top: 0;
+            padding-top: 1%;
+
+          }
+          p {
+            font-size: 3.5vw;
+          }
+        }
+
+      }
+      .page__container__carousel:nth-child(3) {
+        .olympiad {
+          height: 950px;
+          width: auto;
+          padding: 4% 0 0 13vw;
+          h3 {
+            word-wrap: break-word;
+            font-size: 5.3vw;
+            width: 60%;
+            margin-top: 0;
+            padding-top: 1%;
+          }
+          p {
+            font-size: 3.5vw;
+          }
+        }
+      }
+
+    }
+  }
+  .page:nth-child(3) {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 100%;
+    .page__container {
+      display: flex;
+      flex-direction: row;
+      .page__container__carousel {
+        display: inline-block;
+        position: relative;
+        margin: 0 20px;
+        img {
+          display: block;
+          width: 480px;
+          height: 300px;
+          margin-top: 10px;
+
+        }
+        span {
+          position: absolute;
+          top: 70px;
+          left: 30px;
+          font-size: 21px;
+          word-wrap: break-word;
+          font-family: FuturaPT-Bold;
+        }
+      }
+    }
+  }
+  .page:nth-child(4) {
+    background-image: url("../images/bcglabs.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    width: 100%;
+    height: 1200px;
+    position: relative;
+    .page__container {
+      width: 100%;
+      .page__container__title {
+        font-size: 1.5vw;
+        margin-left: 16%;
+        margin-right: 40%;
+        word-wrap: break-word;
+        h2 {
+          text-align: left;
+        }
+
+      }
+      .page__container__articles__cyber {
+        position: absolute;
+        height: 200px;
+        width: 530px;
+        top: 250px;
+        right: 100px;
+      }
+      .page__container__articles__junior {
+        position: absolute;
+        height: 220px;
+        width: 560px;
+        bottom: 115px;
+        left: 100px;
+
+      }
+      .page__container__articles__bitronics {
+        position: absolute;
+        height: 260px;
+        width: 340px;
+        bottom: 115px;
+        right: 100px;
+
+      }
+      //display: grid;
+      //grid-gap: 5px;
+      //grid-template-columns: 1fr 1fr;
+      //grid-template-rows: repeat(7, minmax(50px, auto));
+      //grid-auto-rows: minmax(34px, auto);
+      //grid-template-areas: "title title"
+      //". ."
+      //". cyber"
+      //"junior ."
+      //". bitronics"
+      //". ."
+      //". .";
+      padding: 5px;
+      .page__container__title {
+        text-align: center;
+      }
+    }
+  }
+  .page:nth-child(5) {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    .page__container {
+      img {
+        display: inline-block;
+        height: auto;
+        width: 100%;
+      }
+    }
+  }
+  .page:nth-child(6) {
+    width: 80%;
+    margin: 6% auto;
+    text-align: left;
+    .page__container {
+      grid-template-columns: repeat(6, 1fr);
+      grid-auto-rows: minmax(34px, auto);
+      grid-template-areas: ". header . . . ." ". images images images images .";
+      .page__container__header {
+        display: block;
+        font-size: 3vw;
+        padding-bottom: 50px;
+      }
+      .page__container__images {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 30px;
+        img {
+          display: inline-block;
+          height: auto;
+          width: 100%;
+          margin: auto auto;
+        }
+      }
+    }
+
+  }
+  .page:nth-child(7) {
+    .page__container {
+      display: inline-block;
+      width: 100%;
+      height: 700px;
+      position: relative;
+      form {
+        background-color: rgba(255, 255, 255, 0.6);
+        width: 50%;
+        max-width: 700px;
+        display: block;
+        margin: 132px auto;
+        padding: 50px;
+        border-radius: 10px;
+        position: relative;
+        img {
+          height: 3.2vw;
+          width: auto;
+          margin: 0 0 0 15%;
+          padding: 0;
+        }
+        p {
+          width: 60%;
+          word-wrap: break-word;
+          font-size: 1.8vw;
         }
       }
     }
